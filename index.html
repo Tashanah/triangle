@@ -4,7 +4,7 @@
 <head>
   <title><strong>This app determines type of triangle ie. if it's equilateral,scalene or isosceles</strong></title>
   <link href="trianglr.css" rel="stylesheet" type="text/css">
-
+</head>
 <body>
   <h1><em>Let us help you figure out triangle type!</em></h1>
   <div class="text-box">
@@ -12,33 +12,22 @@
     <img src="triangle/types_of_truangles.png" alt="An image of triangles">
     <p> Please ensure that the length of all three sides is measured in the same units.(eg. meters,inches,centimeters,kilometers)</p>
     <form class="triangle-tracker" action="/action_page.php" autocomplete="off">
-      length of side 1: <input class="side 1" type="float" name="side 1"><br>
-      length of side 2: <input class="side 2" type="float" name="side 2"><br>
-      length of side 3: <input class="side 3"type="float" name="side 3"><br>
-      <button type="button" name="button onClick="triangleSizes()">Submit</button>
-    </form>
 
-  </div>
-  <script src="triangle.js">
-    function triangleSizes {
-      alert("scalene");
-    }
-  </script>
-  <form autocomplete="off" id="triangle-sides">
+
    <p>
-     <label for="sideA">sideA</label>
-     <input id="sideA" type="text" name="sideA" value="" placeholder="enter size of sideA here" required>
+     <label for="side1">length of side 1</label>
+     <input id="side1" type="text" name="side1" value="" placeholder="length of side1 here" required>
    </p>
 
-   <p><label for="sideB">sideB</label>
-     <input id="sideB" type="text" name="sideB" value="" placeholder="enter size of sideA here" required>
+   <p><label for="side2">length of side 2</label>
+     <input id="side2" type="text" name="side2" value="" placeholder="length of side2 here" required>
    </p>
-   <label for="sideC">sideC</label>
-   <input id="sideC" type="text" name="sideC" value="" placeholder="enter size of sideA here" required>
+   <label for="side3">length of side 3</label>
+   <input id="side3" type="text" name="side3" value="" placeholder="length of side3 here" required>
 
    <div class="form-buttons">
-     <button type="submit" name="submit" onclick="getValues()">Check</button>
-     <button type="reset" name="reset">Reset</button>
+     <button type="submit" name="submit" onclick="getValues()">submit</button>
+     
 
    </div>
 

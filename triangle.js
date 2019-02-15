@@ -1,11 +1,11 @@
 
 function getValues() {
-      var side 1 = parseInt(document.getElementById('side 1').value);
+      var side1 = parseInt(document.getElementById('side 1').value);
 
       function getValues() {
-        var side 1 = parseInt(document.getElementById('length of side 1').value);
-        var side 2 = parseInt(document.getElementById('length of side 2').value);
-        var side 3 = parseInt(document.getElementById('length of side 3').value);
+        var side1 = parseInt(document.getElementById('side 1').value);
+        var side2 = parseInt(document.getElementById('side 2').value);
+        var side3 = parseInt(document.getElementById('side 3').value);
         var sides = [side 1, side 2, side 3]
 
         if ((side 1+ side 2) <= side 3 || (side 1 + side 3) <= side 2 || (side 2 + side 3) <= side 1) {

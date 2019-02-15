@@ -1,9 +1,15 @@
 body{
-  background-color: pink;
+  background-color: grey;
 }
 h1{
   text-align: center;
 }
-.test-box {
-    border: 7px solid blue
+.text-box {
+    border: 7px solid white
+  }
+  form{
+    text-align: center;
+  }
+  p{
+    text-align: center;
   }

@@ -1,20 +1,84 @@
-
 function getValues() {
-      var side1 = parseInt(document.getElementById('side 1').value);
+  var side1=parseInt(document.getElementById('side1').value);
+  var side2=parseInt(document.getElementById('side2').value);
+  var side3= parseInt(document.getElementById('side3').value);
+  var sides= [side1, side2, side3];
 
-      function getValues() {
-        var side1 = parseInt(document.getElementById('side 1').value);
-        var side2 = parseInt(document.getElementById('side 2').value);
-        var side3 = parseInt(document.getElementById('side 3').value);
-        var sides = [side 1, side 2, side 3]
+  if((sides[0] === sides[1])&&(sides[1]===sides[2])) {
+    alert("This is an Equilateral Triangle");
+  }else if((sides[0] >(sides[1]+sides[2]))||(sides[1]>(sides[0] +sides[2]))||(sides[2]>(sides[0] + sides[1]))) {
+    alert("This is an NOT a Triangle");
+  }else if((sides[0]===sides[1])||(sides[0]===sides[2])||(sides[1]===sides[2])) {
+    alert("This is an Isosceles Triangle");
+  }else if((sides[0]!==sides[1]!==sides[2])&&(sides[0]+sides[1]>sides[2])||(sides[1]+side3>sides[0])||(sides[0]+sides[2]>sides[1])){
+    alert("This is an Isosceles Triangle");
+  }else{
+    alert("Please enter new triangle lengths");
+  }
+}
 
-        if ((side 1+ side 2) <= side 3 || (side 1 + side 3) <= side 2 || (side 2 + side 3) <= side 1) {
-          alert("Your shape is not a triangle");
-        } else if ((side 1 === side 2) && (side 1 === side 3) && (side 2 === side 3)) {
-          alert("The sides you gave, " + sides[0] + " " + sides[1] + " " + sides[2] + ", make up an equilateral triangle");
-        } else if ((side 1 === side 3) && (side 2!= side 1) || (side 1 === side 2) && (side 3 != side 1) || (side 2 === side 3) && (side2 != side 1)) {
-          alert("The sides you gave, " + sides[0] + " " + sides[1] + " " + sides[2] + ", make up an isoceles triangle");
-        } else {
-          alert("The sides you gave, " + sides[0] + " " + sides[1] + " " + sides[2] + ", make up a scalene triangle");
-        }
-      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getValues() {
+//   var side1 = parseInt(document.getElementById('side1').value);
+//   var side2 = parseInt(document.getElementById('side2').value);
+//   var side3 = parseInt(document.getElementById('side3').value);
+//   var sides = [side1, side2, side3];
+//
+//
+//   if ((side1 > (side2 + side3)) || (side2 > (side1 + side3)) || (side3 > (side1 + side2))) {
+//     alert("This is an NOT a Triangle");
+//   } else if ((side1 === side2) && (side2 === side3)) {
+//     alert("This is an Equilateral Triangle");
+//   } else if ((side1=== side2) || (side1 === side3) || (side2 === side3)) {
+//     alert("This is an Isosceles Triangle");
+//   } else if ((side1 !== side2 !== side3) && (side1 + side2 > side3) || (side2 + side3 > side1) || (side1 + side3 > side2)) {
+//     alert("This is an Scalene Triangle");
+//   } else {
+//     alert("Please enter new triangle lengths");

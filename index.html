@@ -1,47 +1,37 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
-
 <head>
   <title><strong>This app determines type of triangle ie. if it's equilateral,scalene or isosceles</strong></title>
   <link href="trianglr.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
   <h1><em>Let us help you figure out triangle type!</em></h1>
-  <div class="text-box">
     <h2>Please enter length of the <strong> THREE </strong>triangle sides below.</h2>
+  <div class="text-box">
+
+
     <img src="triangle/types_of_truangles.png" alt="An image of triangles">
     <p> Please ensure that the length of all three sides is measured in the same units.(eg. meters,inches,centimeters,kilometers)</p>
-    <form class="triangle-tracker" action="/action_page.php" autocomplete="off">
+    <form class="triangle-tracker" autocomplete="off">
+      <p>
+        <label for="1">length of side 1</label>
+        <input id="side1" type="text" name="side1" value="" placeholder="length of side1 here" required>
+      </p>
 
+      <p><label for="2">length of side 2</label>
+        <input id="side2" type="text" name="side2" value="" placeholder="length of side2 here" required>
+      </p>
+      <label for="3">length of side 3</label>
+      <input id="side3" type="text" name="side3" value="" placeholder="length of side3 here" required>
 
-   <p>
-     <label for="side1">length of side 1</label>
-     <input id="side1" type="text" name="side1" value="" placeholder="length of side1 here" required>
-   </p>
+      <div class="form-buttons">
+        <button type="submit" name="submit" onclick="getValues()">submit</button>
+      </div>
 
-   <p><label for="side2">length of side 2</label>
-     <input id="side2" type="text" name="side2" value="" placeholder="length of side2 here" required>
-   </p>
-   <label for="side3">length of side 3</label>
-   <input id="side3" type="text" name="side3" value="" placeholder="length of side3 here" required>
+    </form>
+    <script src="triangle.js" type="text/javascript">
 
-   <div class="form-buttons">
-     <button type="submit" name="submit" onclick="getValues()">submit</button>
-     
-
-   </div>
-
-
- </form>
-
- <script type="text/javascript" <script src="js/scripts.js" charset="utf-8">
-
- </script>
- <script type="text/javascript">
-   function getValues() {
-    alert("scalene");
-  }
-</script>
-</body>
-
+    </script>
+  </body>
 </html>

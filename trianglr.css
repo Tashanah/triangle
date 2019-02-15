@@ -5,7 +5,8 @@ h1{
   text-align: center;
 }
 .text-box {
-    border: 7px solid white
+    border: 7px solid black;
+    background-color:white;
   }
   form{
     text-align: center;

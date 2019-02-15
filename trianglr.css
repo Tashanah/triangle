@@ -21,4 +21,5 @@ h1{
   img{
     width: 368px;
     length:380px;
+    float:left;
   }

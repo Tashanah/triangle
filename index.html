@@ -11,14 +11,48 @@
     <h2>Please enter length of the <strong> THREE </strong>triangle sides below.</h2>
     <img src="triangle/types_of_truangles.png" alt="An image of triangles">
     <p> Please ensure that the length of all three sides is measured in the same units.(eg. meters,inches,centimeters,kilometers)</p>
-    <form action="/action_page.php" autocomplete="off">
-      length of side 1: <input type="float" name="side 1"><br>
-      length of side 2: <input type="float" name="side 2"><br>
-      length of side 3: <input type="float" name="side 3"><br>
-      <input type="submit" value="Submit" onclick="">
+    <form class="triangle-tracker" action="/action_page.php" autocomplete="off">
+      length of side 1: <input class="side 1" type="float" name="side 1"><br>
+      length of side 2: <input class="side 2" type="float" name="side 2"><br>
+      length of side 3: <input class="side 3"type="float" name="side 3"><br>
+      <button type="button" name="button onClick="triangleSizes()">Submit</button>
     </form>
+
   </div>
-  <script src="triangle.js"></script>
+  <script src="triangle.js">
+    function triangleSizes {
+      alert("scalene");
+    }
+  </script>
+  <form autocomplete="off" id="triangle-sides">
+   <p>
+     <label for="sideA">sideA</label>
+     <input id="sideA" type="text" name="sideA" value="" placeholder="enter size of sideA here" required>
+   </p>
+
+   <p><label for="sideB">sideB</label>
+     <input id="sideB" type="text" name="sideB" value="" placeholder="enter size of sideA here" required>
+   </p>
+   <label for="sideC">sideC</label>
+   <input id="sideC" type="text" name="sideC" value="" placeholder="enter size of sideA here" required>
+
+   <div class="form-buttons">
+     <button type="submit" name="submit" onclick="getValues()">Check</button>
+     <button type="reset" name="reset">Reset</button>
+
+   </div>
+
+
+ </form>
+
+ <script type="text/javascript" <script src="js/scripts.js" charset="utf-8">
+
+ </script>
+ <script type="text/javascript">
+   function getValues() {
+    alert("scalene");
+  }
+</script>
 </body>
 
 </html>

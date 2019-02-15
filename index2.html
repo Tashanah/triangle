@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+<script src="triangle.js" charset="utf-8" type="text/javascript"></script>
+
+  <form autocomplete="off" id="triangle-sides">
+    <p>
+      <label for="sideA">sideA</label>
+      <input id="sideA" type="text" name="sideA" value="" placeholder="enter size of sideA here" required>
+    </p>
+
+    <p><label for="sideB">sideB</label>
+      <input id="sideB" type="text" name="sideB" value="" placeholder="enter size of sideA here" required>
+    </p>
+    <label for="sideC">sideC</label>
+    <input id="sideC" type="text" name="sideC" value="" placeholder="enter size of sideA here" required>
+
+    <div class="form-buttons">
+      <button type="submit" name="submit" onclick="getValues()">Check</button>
+      <button type="reset" name="reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>

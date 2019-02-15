@@ -1,3 +1,9 @@
 body{
   background-color: pink;
 }
+h1{
+  text-align: center;
+}
+.test-box {
+    border: 2px solid red;
+  }

@@ -11,12 +11,14 @@
 ## Setup/Installation Requirements
 
 -   Clone this repository to your desktop,use the link git clone followed by the URL to this repository,
-    {This app does not require any special software to run.
-      The following is a list of the behavior driven requirements for determining type of triangle.
-      1) For an equilateral triangle, all sides must be equal.
-    2)For an isosceles triangle, two sides are exactly equal.
-    3)For a scalene triangle, none of the sides is equal. However, the sum of any two sides of the triangle must be greater than the third side.
-    4)Most importantly, if the sum of any two sides of the triangle is equal to or less than the third remaining side, then a triangle CANNOT be formed using those values. (For example, the values 9,4 & 3 cannot form a triangle.) }
+    {This app does not require any special software to run.}
+  | General behaviour | input   |Output |
+  | :------------- | :------------ |:------------ |
+  |To determine if it is a triangle |sum of any two sides of the triangle is equal to or less than the third remaining side|NOT a triangle.|
+  |To determine if it is an equilateral|If all three sides are equal | equilateral triangle|
+  |To determine if it is isosceles |two sides are exactly equal|isosceles triangle|
+  |For a scalene triangle |none of the sides is equal.The sum of any two sides of the triangle must be greater than the third side.|Scalene triangle.|
+
     ## Known Bugs
     {This app does not have any known bugs. }
     ## Technologies Used
